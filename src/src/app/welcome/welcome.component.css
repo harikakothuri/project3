@@ -1,0 +1,25 @@
+.welcome{
+    padding: 60px;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    background: #1abc9c;
+}
+
+.inputDiv{
+    padding-top: 20px;
+    padding-left: 550px;
+}
+
+.inputBar{
+    padding-right: 50px;
+}
+
+button{
+    border-top-left-radius: 10% 50%;
+	border-top-right-radius: 10% 50%;
+	border-bottom-left-radius: 10% 50%;
+	border-bottom-right-radius: 10% 50%;
+    margin-left: 620px;
+    background: #1abc9c;
+}

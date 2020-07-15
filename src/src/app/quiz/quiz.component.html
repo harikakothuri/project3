@@ -1,0 +1,19 @@
+
+<div class="name">Hello {{name}}, Start Quiz Here!</div>
+<br>
+<div class="quizDiv" *ngFor = "let questions of questionsList">
+    <label>{{questions.questionNumber}}. </label>
+    <label>{{questions.question}}</label>
+    <br><br>
+    
+    <div *ngFor="let option of questions.options">
+        <input type="radio" id="{{option}}" name="{{questions.questionNumber}}" value="{{option}}"
+                (change) = "onItemChange(option, questions.questionNumber)">
+        <label>{{option}}</label>  
+        <br>
+    </div>
+    <br><br>
+</div>
+
+<button (click)="sendAnswers()" [routerLink]="['/result', selectedAnswers]">Submit Quiz</button>
+

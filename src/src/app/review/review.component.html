@@ -1,0 +1,12 @@
+
+<div class="review">Review your answers here!</div>
+<br>
+<div class="reviewDiv">
+    <div *ngFor="let selected of selectedAnswersList | keyvalue ; let i=index">
+        <label>{{answersList[i].questionNumber}}.</label>&nbsp;
+        <label><b>Your Answer:</b> {{selected.value}}</label>
+        <div><b>&nbsp;&nbsp;&nbsp;&nbsp;
+            Correct Answer:</b> {{answersList[i].answer}}</div>
+        <br>
+    </div>
+</div>

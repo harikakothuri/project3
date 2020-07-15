@@ -1,0 +1,13 @@
+.score{
+    background: #1abc9c;
+    padding: 10px;
+}
+
+button{
+    border-top-left-radius: 10% 50%;
+	border-top-right-radius: 10% 50%;
+	border-bottom-left-radius: 10% 50%;
+	border-bottom-right-radius: 10% 50%;
+    background: #1abc9c;
+    margin-left: 10px;
+}
